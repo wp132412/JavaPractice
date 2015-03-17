@@ -1,5 +1,13 @@
 package org.dimigo.basic;
 
+/**
+ * << 두번째 수행평가 과제 >>
+ * 내용 : 급여 계산
+ * 작성일자 : 2015년 3월 17일
+ * @author JuchanP
+ * @version 1.0
+ */
+
 public class Promotion {
 	public static void main(String[] args) {
 		int salary = 1700000;
