@@ -5,13 +5,23 @@ public class Condition {
 	static final int CAR = 300;
 	static final int ETC = 600;
 	
+	/* Const
+	 * - int BUS : 버스 기본요금
+	 * - int CAR : 경차 기본요금
+	 * - int ETC : 그 외 기본요금
+	 */
+
+	/* Variables.
+	 * - int type : 차종
+	 * - int dis : 거리
+	 */
+	
+	/* Functions.
+	 * - printRate(int type, int dis) : 차종과 거리에 따른 요금 출력
+	 */
+	
 	public static void main(String[] args) {
 		printRate(0, 10);
-		printRate(1, 10);
-		printRate(2, 10);
-		printRate(0, 25);
-		printRate(1, 25);
-		printRate(2, 25);
 	}
 	
 	static void printRate(int type, int dis) {
@@ -33,6 +43,12 @@ public class Condition {
 	}
 	
 	static int getRate(int type, int dis) {		
+		/*
+		 * int fee : 최종 요금
+		 * int addfee : 할증 요금
+		 * int mul : 할증 배수
+		 */
+		
 		int fee = 0;
 
 		if(type == 0) {
