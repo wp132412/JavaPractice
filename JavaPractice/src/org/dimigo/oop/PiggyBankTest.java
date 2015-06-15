@@ -7,7 +7,7 @@ public class PiggyBankTest {
 		FamilyMember fm3 = new FamilyMember("나");
 		FamilyMember fm4 = new FamilyMember("남동생");
 		
-		FamilyMember.printMemberCnt();
+		fm4.printMemberCnt();
 		
 		PiggyBank pb = new PiggyBank();
 		

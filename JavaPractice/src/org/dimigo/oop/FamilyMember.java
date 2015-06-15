@@ -13,7 +13,7 @@ public class FamilyMember {
 		return memberName;
 	}
 	
-	public static void printMemberCnt() {
+	public void printMemberCnt() {
 		System.out.println("가족 총 인원수 : "+memberCnt+"명");
 	}
 }
