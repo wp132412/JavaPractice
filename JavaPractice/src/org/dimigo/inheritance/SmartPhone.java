@@ -28,7 +28,7 @@ public class SmartPhone {
 	}
 	
 	public void useSpecialFunction() {
-		if(this == null) return;
+		// if(this == null) return;
 		
 		if(this instanceof IPhone) {
 			((IPhone) this).useAirDrop();
