@@ -1,8 +1,7 @@
 package org.dimigo.exception;
 
-public class AgeCheckException extends Exception {
+public class AgeCheckException extends Exception { 
 	public AgeCheckException() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public AgeCheckException(Movie m) {
