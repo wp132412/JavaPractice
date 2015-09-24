@@ -25,14 +25,5 @@ public class MelonChart {
 		list.remove(3);
 		printList(list);
 	}
-	
-	public static void printList(List <Music> list) {
-		int size = list.size();
-		
-		for (int i = 0; i < size; i++) {
-			System.out.println((i+1)+". "+list.get(i));
-		}
-		
-		System.out.println();
-	}
+
 }
