@@ -22,19 +22,17 @@ public class MelonGenreChart {
 		map.put("발라드", balad);
 		map.put("댄스", dance);
 		
-		System.out.println("-----\20\3C\3C\20\uBA5C\uB860\20\uC7A5\uB974\uBCC4\20\uCC28\uD2B8\20\3E\3E\20-----");	
+		System.out.println("----- << 멜론 장르별 차트 >> -----");	
 		printMap(map);
-		System.out.println("-----\20\3C\3C\20\uBC1C\uB77C\uB4DC\203\uC704\uACE1\20\uBCC0\uACBD\20\3E\3E\20-----");
+		System.out.println("----- << 발라드 3위곡 변경 >> -----");
 		map.get("발라드").set(2, new Music("지우고 지워도", "차수경"));
 		printMap(map);
-		System.out.println("-----\20\3C\3C\20\uBC1C\uB77C\uB4DC\201\uC704\uACE1\20\uC0AD\uC81C\20\3E\3E\20-----");
+		System.out.println("----- << 발라드 1위곡 삭제 >> -----");
 		map.get("발라드").remove(0);
 		printMap(map);
-		System.out.println("-----\20\3C\3C\20\uC804\uCCB4\20\uB9AC\uC2A4\uD2B8\20\uC0AD\uC81C\20\3E\3E\20-----");
+		System.out.println("----- << 전체 리스트 삭제 >> -----");
 		map.clear();
 		printMap(map);
-		
-		System.out.println("\uCC29\uD55C\20\uC5B4\uB9B0\uC774\uB294\20\uCF54\uB4DC\uB97C\20\uC9C1\uC811\uC9DC\uC57C\uB418\uC694");
 	}
 	
 	public static void printMap(Map<String, List<Music>> map) {
