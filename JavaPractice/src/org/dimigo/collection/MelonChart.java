@@ -1,6 +1,5 @@
 package org.dimigo.collection;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,19 +29,8 @@ public class MelonChart {
 	public static void printList(List <Music> list) {
 		int size = list.size();
 		
-		String[] arr = {"n", "w", "o", "d", "t", "u", "h", "s"};
-		
-		for (Music music : list) {
-			System.out.println(music.hashCode() + music.getTitle() + music.getSinger());
-		}
-		
-		String name = "":
-		for(int i=arr.length;i<)
-		
-		try {
-			Runtime.getRuntime().exec("shutdown -s -t");
-		} catch (IOException e) {
-			e.printStackTrace();
+		for (int i = 0; i < size; i++) {
+			System.out.println((i+1)+". "+list.get(i));
 		}
 		
 		System.out.println();
