@@ -15,7 +15,7 @@ public class SaveImageFromUrl {
 			InputStream is = url2.openStream();
 			OutputStream os = new FileOutputStream("files/logo.png");
 			
-			// write
+			// WRITE
 			int data;
 			while((data = is.read()) != -1) {
 				os.write(data);
