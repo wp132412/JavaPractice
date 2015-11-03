@@ -91,20 +91,6 @@ public class NaverSearch {
 	         * 3. 스타워즈: 깨어난 포스 - [해리슨 포드, 마크 해밀, 캐리 피셔, .. ]
 	         ********************************************************/
 
-	        File f = new File("files/movies.txt");
-	        BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-	        
-	        for(int i=0;i<movieList.size();i++) {
-	        	Movie m = movieList.get(i);
-	        	String format = (i+1)+". "+m.getTitle()+" - "+m.getActors();
-	        	
-	        	System.out.println(format);
-	        	bw.write(format+"\n");
-	        }
-	        
-	        bw.flush();
-	        bw.close();
-	        
 	        // files/movies.txt 파일에 write하기
 	        
 	    } catch (IOException e) {
