@@ -1,23 +1,25 @@
 package org.dimigo.thread;
 
-public class Runner extends Thread {
+public class Runner implements Runnable {
+	private String name;
+	
 	public Runner() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public Runner(String name) {
-		super(name);
+		this.name = name;
 	}
 
 	@Override
 	public void run() {
 		int meter = 0;
 
-		System.out.println(getName() + " 출발");
+		System.out.println(name + " 출발");
 
 		for (int i = 10; i >= 0; i--) {
 			meter = i * 10;
-			System.out.println(getName() + " " + meter + " 미터");
+			System.out.println(name + " " + meter + " 미터");
 
 			try {
 				Thread.sleep(1000);
@@ -27,6 +29,6 @@ public class Runner extends Thread {
 			}
 		}
 
-		System.out.println(getName() + " 골인");
+		System.out.println(name + " 골인");
 	}
 }
